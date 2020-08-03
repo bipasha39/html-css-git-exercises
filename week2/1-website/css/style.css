@@ -1,19 +1,198 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+ }
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 0 auto;
+
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    height: 6%;
 
 
+}
+nav {
+   
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+
+
+}
+
+.karma-logo {
+height: 50px;
+
+}
+.nav-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.container-one {
+    height: 100%;
+    color: ivory;
+}
+.image-one {
+    height: 75vh;
+    background: url("https://github.com/bipasha39/html-css-git-exercises/blob/master/week2/1-website/img/first-background.jpg?raw=true"); 
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    
+}
+
+.section-one-text h1 {
+font-size: 3.125rem;
+font-weight: 300;
+}
+
+.section-one-text p{
+font-size: 1.687rem;
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+
+.section-one-text button {
+    background-color: #F15A29;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    border-style: none;
+    background-color: #F15A29;
+
+}
+.section-one-text {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+
+ .container-2 {
+    margin-top: 7.87rem;
+    margin-right: 0px;
+    margin-bottom: 3.125rem;
+    margin-left: 0px;
+ }
+
+.container-image {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto;
+}
+.block-icon-text{
+    text-align: center;
+    width: 33.33%;
+    padding: 1rem;
+
+}
+.block-icon-text p {
+    font-size: 1.563rem;
+}
+ 
+.block-icon-text img {
+      width: 127px;
+      height: 127px;
+}
+
+.header-h2-text {
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+ 
+
+footer {
+    
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+footer hr {
+    width: 60%;
+    margin: 1rem auto;
+    border: 0;
+    border-top: 1px solid #EAEBEC;
+}
+footer .social-icons {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: .5rem auto;
+   }
+   .rounded {
+       border: 1px solid #CCCCCC;
+       border-radius: 1.25rem;
+       padding: .5rem;
+       height: 2.5rem;
+       width: 2.5rem;
+   }
+   .social-icons li {
+       margin: 2rem;
+       margin-top: 1rem;
+   }
+
+   @media screen and (max-width: 760px){
+     
+    .container-image {
+     display: block;
+      }
+
+      .image-one {
+          width: 100%;
+          padding: 25px;
+          box-sizing: border-box;
+              }
+
+      .block-icon-text{
+                
+                width: 100%;   
+                 }    
+   }
+
+   @media screen (min-width: 759) and (max-width: 1023px){
+    section-one-text h1 {
+        text-transform: uppercase;
+          }
+       
+}
+
+   @media screen and (min-width: 1024px){
+    .section-one-text h1 {
+        color: wheat;
+          }
+   }
+
+   
